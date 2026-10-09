@@ -1,0 +1,25 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int n, i = 1, term = 1, sum = 0;
+
+    printf("Enter number of terms: ");
+    scanf("%d", &n);
+
+    while (i <= n)
+    {
+        if (i % 2 == 1)
+            sum = sum + term;
+        else
+            sum = sum - term;
+
+        term = term + 2;
+        i++;
+    }
+
+    printf("Sum = %d", sum);
+
+    return 0;
+}
